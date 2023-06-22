@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javadetail.css">
+    <title>Java Course</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $(".panel").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#tab nav button").click(function () {
+                const id = $(this).data('id');
+                if (!$(this).hasClass('active')) {
+                    $("#tab nav button").removeClass('active');
+                    $(this).addClass('active');
+
+                    $('.tab-content').hide();
+                    $(`[data-content=${id}]`).slideToggle(1000);
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <header>
+        <div class="tittle-logo">
+            <img src="Logo ABC.jpg" alt="Logo ABC Learning Center" class="img-navbar">
+            <p style="font-weight:bolder; font-size: x-large;">ABC Learning Center</p>
+        </div>
+        <ul>
+            <li><a href="../1. home/home.html">Home</a></li>
+            <li><a href="../2. about us/about.html">About Us</a></li>
+            <li><a href="../3. contact/contact.html">Contact Us</a></li>
+            <li><a id="flip">Course</a></li>
+            <div class="panel">
+                <a href="../6. course Details/courseD.html">Course Details</a>
+                <a href="../7. course schedules/courseSchedule.html">Course Schedule</a>
+            </div>
+        </ul>
+    </header>
+    <!-- Navbar End -->
+    <!-- Content Start -->
+    <div class="mainbackground">
+        <div class="textContent">
+            <h1>JAVA FUNDAMENTAL</h1>
+            <h3>The easy way to learn Java with Us</h3>
+        </div>
+    </div>
+    <hr>
+    <div class="bg2">
+        <div id="tab">
+            <nav>
+                <button class="active" data-id='1'>Introduction</button>
+                <button data-id='2'>Methods</button>
+                <button data-id='3'>Advanced</button>
+            </nav>
+
+            <div class="tab-content active" data-content='1'>
+                <h1>What is Java</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae ipsa deserunt vero, doloremque,
+                    temporibus nemo incidunt dicta dolorem odio facilis facere, repudiandae eum nesciunt consectetur
+                    sint quibusdam provident similique officiis eveniet labore? Laudantium et, sed quia adipisci odio
+                    quaerat numquam nihil animi. Voluptatibus officiis in iusto dignissimos soluta voluptatem amet iste
+                    earum vitae esse, officia, reiciendis ab recusandae? Ad quisquam aperiam minima possimus ullam quasi
+                    recusandae nemo, molestiae consequuntur tempore veritatis placeat quia mollitia reprehenderit iste
+                    voluptate eaque porro corrupti iusto. Dignissimos eaque inventore similique ipsam quisquam ad qui
+                    perferendis optio accusamus commodi, officiis, iure delectus nulla, reiciendis rerum quibusdam.</p>
+            </div>
+            <div class="tab-content" data-content='2'>
+                <h1>Method Parameter, Method Overloading, of Java</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas ipsam quam minima. Quos doloremque eum
+                    veritatis delectus sint iste voluptate in dicta nobis. Temporibus vero reprehenderit, deserunt
+                    laboriosam quibusdam voluptates ratione earum eius eaque. Possimus consequatur aliquid nobis fugiat
+                    harum quibusdam dolorem rem ut nostrum assumenda quidem sapiente facilis, molestiae incidunt dolores
+                    sit nam illum quo. Beatae impedit, recusandae consequatur quidem alias perspiciatis officiis nisi
+                    soluta atque tempore, obcaecati corrupti tenetur. Vero maiores quibusdam veritatis temporibus. Non,
+                    animi debitis. Ab, commodi quo. Amet culpa fugit repellendus et distinctio exercitationem dolores
+                    minus nemo adipisci optio debitis quia, sint minima velit numquam.</p>
+            </div>
+            <div class="tab-content" data-content='3'>
+                <h1>How to make Java in Advanced Level</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, aut vitae nostrum asperiores magnam
+                    ut accusamus tempora numquam nihil autem ipsum possimus nemo molestias harum eius ipsam, doloremque
+                    repellat incidunt in veniam aliquam necessitatibus pariatur a architecto. At, assumenda sapiente.
+                    Explicabo placeat mollitia libero asperiores sint debitis quos cumque alias, nostrum consectetur
+                    perspiciatis atque quas accusantium necessitatibus officiis. Libero molestiae mollitia, alias
+                    eligendi aliquam repellat nemo. Voluptate tenetur ipsum ad vero repellendus earum dolores voluptas
+                    quo consequuntur deleniti recusandae ea tempore, vitae cum magnam maiores sapiente similique
+                    mollitia, neque dignissimos rem saepe impedit. Repudiandae ut voluptates aspernatur optio quis quia!
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Content End -->
+    <!-- Footer Start -->
+    <footer>
+        <br><br>
+        <ul>
+            <li><a href="../4. privacy policy/privacy.html">Privacy Policy</a></li>
+            <li><a href="../5. sitemap/sitemap.html">Sitemap</a></li>
+        </ul>
+    </footer>
+    <footer>
+        <br><br>
+        <p>© 2022 ABC Learning Company | All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

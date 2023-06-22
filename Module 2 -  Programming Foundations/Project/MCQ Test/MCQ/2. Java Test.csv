@@ -1,0 +1,10 @@
+1. What is Java?,Language Program,Operating System,Hardware,Internet Tools,a,A. Language Program
+2. Which are all true about java,Functional Language,Procedural Language,Object Oriented Language,Language,c,C. Object Oriented Language
+3. What is the extension of java source files,.js,.html,.py,.java,d,D.   .java
+4. Which tool compile debug and execute java programs?,JRE,JDK,JS,JSS,b,B. JDK
+5. What JDK means ?,Java Development Kit,Java Dependency Kit,Java Decompiler Kit,Java Downgrade Kit,a,A. Java Development Kit
+6. What method we are using to run the program?,run(),main(),start(),go(),b,B. main()
+7. Which one is not primitive data type in Java?,boolean,int,double,String,d,D. String
+8. Which one is not an assignment operator,==,>>=,*,<<=,c,C. *
+9. Which of the following lines of code creates a variable to store the text “Hello World”?,String myString = “Hello World”;,Int myInt = Hello World;,"Int myInt = "Hello World";","Hello World",a,A. String myString = “Hello World”;
+10. What is the result of the following expression? “21” + 1 + 2,“1212”,"2112","2121","1122",b,B. "2112"

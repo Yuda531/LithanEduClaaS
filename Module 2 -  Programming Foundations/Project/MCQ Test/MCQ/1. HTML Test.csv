@@ -1,0 +1,10 @@
+1. What does HTML stand for?,Hyperlinks and Text Markup Language,Home Tool Markup Language,Hyper Text Markup Language,Hypertext Transfer Protocol,C,C. Hyper Text  Markup Language
+2. Choose the correct HTML element for the smallest heading,<head>,<h1>,<h3>,<h6>,D,D. <h6>
+3. Which character is used to indicate an end tag?,/,<, *,!,A,A. /
+4. How can you open a link in a new tab/browser window?,"<a href="url" target="new">","<a href="url" target="_blank">","<a href="url" new>",a< newTab >,B,B. "<a href="url" target="_blank">"
+5. What is the correct HTML for making a checkbox?,<check>,"<input type="check">","<input type="checkbox">",<checkbox>,C,C. "<input type="checkbox">"
+6. Which one is HTML Comment, <!-- and end with -->,//,#,<comment>,A,A. <!-- and end with -->
+7. Which HTML element defines the title of a document?,<head>,<title>,<meta>,<body>,B,B. <title>
+8. Which HTML attribute specifies an alternate text for an image if the image cannot be displayed?,src, img,!DOCTYPE,alt,D,D. alt
+9. Which HTML element is used to specify a footer for a document or section?,<section>,<bottom>,<footer>,<script>,C,C. <footer>
+10. What HTML use for??,Make a Website,Make an Application,Make an Operating System,Make an Hardware,A,A. Make a Website

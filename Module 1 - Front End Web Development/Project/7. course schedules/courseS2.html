@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="courseS2.css">
+    <title>Java Schedule</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $(".panel").slideToggle("slow");
+            });
+        });
+        // $(document).ready(function(){
+        //     $('.downbtn').click(function(){
+        //         alert('Coming Soon')
+        //     })
+        // })
+    </script>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <header>
+        <div class="tittle-logo">
+            <img src="Logo ABC.jpg" alt="Logo ABC Learning Center" class="img-navbar">
+            <p style="font-weight:bolder; font-size: x-large;">ABC Learning Center</p>
+        </div>
+        <ul>
+            <li><a href="../1. home/home.html">Home</a></li>
+            <li><a href="../2. about us/about.html">About Us</a></li>
+            <li><a href="../3. contact/contact.html">Contact Us</a></li>
+            <li><a id="flip">Course</a></li>
+            <div class="panel">
+                <a href="../6. course Details/courseD.html">Course Details</a>
+                <a href="../7. course schedules/courseSchedule.html">Course Schedule</a>
+            </div>
+            <li><a href="../8. lead registration page/registration.html">Registration</a></li>
+        </ul>
+    </header>
+    <!-- Navbar End -->
+    <!-- Content Start -->
+    <div class="maincontent">
+        <div class="textup">
+        <h1>
+            <CENTER>Java Course Schedule Detail
+        </h1>
+        <p style="text-align: center; padding: 10px 100px;">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque nihil incidunt, consequuntur illo vel
+            tenetur id cum magni, quo pariatur molestiae ea quisquam saepe tempore adipisci quod dolorum ipsam nam.
+            Harum, deserunt corrupti tenetur rem ab laborum repellendus voluptatibus expedita molestias neque officiis
+            necessitatibus labore aliquam.
+        </p>
+        </div>
+        <div class="schedule">
+            <table border="1" cellspacing="0" align="center">
+                <tr class="row1">
+                    <td align="center" height="50" width="100"><br>
+                        <b>Session/Day</b></br>
+                    </td>
+                    <td align="center" height="50" width="100">
+                        <b>Monday</b>
+                    </td>
+                    <td align="center" height="50" width="100">
+                        <b>Tuesday</b>
+                    </td>
+                    <td align="center" height="50" width="100">
+                        <b>Wednesday</b>
+                    </td>
+                    <td align="center" height="50" width="100">
+                        <b>Thursday</b>
+                    </td>
+                    <td align="center" height="50" width="100">
+                        <b>Friday</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="50">
+                        <b>I</b>
+                    </td>
+                    <td align="center" height="50">Module 6</td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50">Module 9</td>
+                    <td align="center" height="50"></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="50">
+                        <b>II</b>
+                    </td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50">Module 7</td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50">Module 10</td>
+                </tr>
+                <tr>
+                    <td align="center" height="50">
+                        <b>III</b>
+                    </td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50">Module 8</td>
+                    <td align="center" height="50"></td>
+                    <td align="center" height="50"></td>
+                    </td>
+                </tr>
+                <tr class="tdown">
+                    <td colspan="6" align="center" height="50">
+                        <h4>*One Session: 2 Hours</h4>
+                </tr>
+            </table>
+        </div>
+        <br><br><br>
+        <a href="../8. lead registration page/registration.html" class="downbtn"><> Start Course</a>
+        <br><br>
+    </div>
+    <!-- Content End -->
+    <!-- Footer Start -->
+    <footer>
+        <br><br>
+        <ul>
+            <li><a href="../4. privacy policy/privacy.html">Privacy Policy</a></li>
+            <li><a href="../5. sitemap/sitemap.html">Sitemap</a></li>
+        </ul>
+    </footer>
+    <footer>
+        <br><br>
+        <p>© 2022 ABC Learning Company | All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

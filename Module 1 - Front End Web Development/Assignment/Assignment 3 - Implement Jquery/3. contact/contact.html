@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Us</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+            $(".panel").slideToggle("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <header>
+        <div class="tittle-logo">
+            <img src="Logo ABC.jpg" alt="Logo ABC Learning Center" class="img-navbar">
+            <p style="font-weight:bolder; font-size: x-large;">ABC Learning Center</p>
+        </div>
+            <ul>
+                <li><a href="../1. home/home.html">Home</a></li>
+                <li><a href="../2. about us/about.html">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a id="flip">Course</a></li>
+                    <div class="panel">
+                        <a href="../6. course Details/courseD.html">Course Details</a>
+                        <a href="../7. course schedules/courseSchedule.html">Course Schedule</a>
+                    </div>
+            </ul>
+    </header>
+    
+    <!-- Navbar End -->
+    <!-- Content Start -->
+    <!-- Opening Content Start -->
+    <br>
+    <div class="op-content3">
+        <div class="div-opcontent3">
+            <h1>Get in Touch</h1>
+        </div>
+        <img src="contact.jpg" alt="contact-img" class="img-opcontent3">
+    </div>
+    <!-- Opening Conntent End -->
+    <!-- Card Contact Start -->
+    <br><br><br>
+    <div class="mom-card">
+        <div class="card">
+            <img src="office.jpg" alt="Office" class="img-card">
+            <div class="container-card">
+                <h2 style="color:#333333;font-weight:200;text-align:center;text-decoration:none;font-style:normal;" >Our Main Office</h2>
+                <p class="text" style="color:#6b6b6b;font-weight:100;text-align:center;text-decoration:none;font-style:normal; display: none;">Kelapa Raya Street, Duren Sawit District, East Jakarta City, Special Capital Region of Jakarta 13450</p>
+                <a href="#" class="myButton" onclick="showText(1)">Show</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="phone.png" alt="Phone" class="img-card">
+            <div class="container-card">
+                <h2 style="color:#333333;font-weight:200;text-align:center;text-decoration:none;font-style:normal;" >Phone and Fax Number</h2>
+                <p class="text" style="color:#6b6b6b;font-weight:100;text-align:center;text-decoration:none;font-style:normal; display: none;">082284019299  // 083157743399</p>
+                <a href="#" class="myButton" onclick="showText(2)">Show</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="email.jpg" alt="Email" class="img-card">
+            <div class="container-card">
+                <h2 style="color:#333333;font-weight:200;text-align:center;text-decoration:none;font-style:normal;" >Email ID </h2>
+                <p class="text" style="color:#6b6b6b;font-weight:100;text-align:center;text-decoration:none;font-style:normal; display: none;">abclc99@gmail.com</p>
+                <a href="#" class="myButton" onclick="showText(3)">Show</a>
+            </div>
+        </div>
+    </div>
+    <!-- Card Contact End -->
+    <!-- ChatBox Start -->
+    <br><br><br>
+    <div class="wrapper">
+        <form class="form">
+            <div class="pageTitle title">Message to Us </div>
+            <div class="secondaryTitle title">Please fill this form to message</div>
+            <input type="text" class="name formEntry" placeholder="Name" />
+            <input type="text" class="email formEntry" placeholder="Email"/>
+            <textarea class="message formEntry" placeholder="Message"></textarea>
+            <input type="checkbox" class="termsConditions" value="Term">
+            <label style="color: grey" for="terms"> I Accept the <span style="color: #0e3721">Terms of Use</span> & <span style="color: #0e3721">Privacy Policy</span>.</label>
+            <br>
+            <button class="submit formEntry" onclick="showAlert()">Submit</button>
+        </form>
+    </div>
+    <br><br>
+    <!-- ChatBox End -->
+    <!-- Social Media Start -->
+    <br><br>
+    <div class="socialmedia">    
+        <h1>Take a Look Our Social Media</h1>
+        <br>
+            <ul>
+                <li><a href="#linkedin"><img src="linkedin.png" alt="linkedin"></a></li>
+                <li><a href="#facebook"><img src="FB.png" alt="facebook"></a></li>
+                <li><a href="#instagram"><img src="ig.png" alt="instagram"></a></li>
+                <li><a href="#youtube"><img src="yt.png" alt="youtube"></a></li>
+            </ul>
+    </div>
+    <!-- Social Media End -->
+    <!-- Content End -->
+    <!-- Footer Start -->
+    <footer>
+        <br><br>
+        <ul>
+            <li><a href="../4. privacy policy/privacy.html">Privacy Policy</a></li>
+            <li><a href="../5. sitemap/sitemap.html">Sitemap</a></li>
+        </ul>
+    </footer>
+    <footer>
+        <br><br>
+        <p>© 2022 ABC Learning Company | All rights reserved.</p>
+    </footer>
+    <script>
+        function showAlert() {
+            alert("404 not found.");
+        }
+
+        
+
+        function showText(info) {
+            let text = document.getElementsByClassName('text');
+            let btn = document.getElementsByClassName('myButton');
+
+    
+
+            if (info == 1){
+                btn[0].style.display = 'none';
+                text[0].style.display = 'block';
+            } else if (info == 2){
+                btn[1].style.display = 'none';
+                text[1].style.display = 'block';
+            } else if (info == 3){
+                btn[2].style.display = 'none';
+                text[2].style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

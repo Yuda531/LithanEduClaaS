@@ -1,0 +1,10 @@
+1. Inside which HTML element do we put the JavaScript?,<scripting>,<js>,<script>,<javascript>,C,C. <script>
+2. Where is the correct place to insert a JavaScript?,<head>,<title>,<link>,<footer>,A,A. <head>
+3. What is the correct syntax for referring to an external script called "abc.js"?,"<script name="abc.js">","<script src="abc.js">","<script href="abc.js">","<script link="abc.js">",B,"B.  <script src="abc.js">"
+4. How do you write "Hello World" in an alert box?,"msgBox("Hello World");","alert("Hello World");","alertBox(""Hello World"");","msg("Hello World");",B,B. alert("Hello World");
+5. How do you call a function named "myFunction""?,call function,call myFunction(),callmyFunction(),myFunction(),D,D. myFunction()
+6. How to write an IF statement for executing some code if "i" is NOT equal to 21?,if (i != 21),if (i <> 21),if i == 21,if (i == 21),A,A. if (i != 21)
+7. How can you add a comment in a JavaScript?,<!--This is a comment-->,**This is a comment**,//This is a comment,This is a comment,C,C. //This is a comment
+8. Which event occurs when the user clicks on an HTML element?,onclick,onmouseclick,onchange,onmouseover,A,A. onclick
+9. How do you declare a JavaScript variable?,variable carName,var carName,v carName,carName variable,B,B. var carName
+10. Which operator is used to assign a value to a variable?,+,-,/,=,D,D. =

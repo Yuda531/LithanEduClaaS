@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar Start */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgb(0, 200, 255);
+    box-shadow: 2px 2px 7px 1px #80787e;
+    padding: 10px 55px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.tittle-logo {
+    display: flex;
+    width: 32%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.img-navbar {  
+    max-width: 30%;  
+    height: auto;  
+}  
+
+
+ul {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    list-style: none;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+    transition: 0.75s;
+
+}
+ul li a:hover {
+    background-color: rgb(236, 236, 236);
+}
+/* Menu Bar Jquerry */
+
+.panel, #flip {
+    text-align: center;
+    background-color: rgb(0, 200, 255);
+    width: 100%;
+    }
+
+    .panel {
+    background-color: #EDEBD7;
+    border-radius: 30px;
+    width: 180px;
+    position: absolute;
+    display: none;
+    top: 70px;
+    right: 30px;
+    }
+
+    .panel a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 7px 0px;
+    }
+    .panel a:hover{
+        background-color: #00000025;
+        border-radius: 30px;
+        transform: scale(0.9);
+    }
+/* Menu Bar End */
+/* Navbar End */
+/* Content Start */
+
+
+body {
+    overflow-x: hidden;
+    background-image: url(lc.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+h1 {
+    margin: 0;
+    font-size: 22px;
+    line-height: 1;
+    color: #423E37;
+}
+.page {
+    width: 100vw;
+    height: 100vh;
+    min-height: 700px;
+    overflow: hidden;
+}
+.sub-content{
+    width: 100%;
+    height: 700px;
+
+    background-color: #e3b13c4f;
+}
+.tabs-controls {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 50px 0 100px;
+    list-style-type: none;
+}
+.tabs-controls__link {
+    position: relative;
+    display: block;
+    padding: 16px 32px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffa200;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.tabs-controls__link:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: #ffa200;
+    border-radius: 2px;
+    margin: auto;
+    content: '';
+    transition: width 0.4s;
+}
+.tabs-controls__link--active:after {
+    width: 100%;
+}
+.cards-container {
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    height: calc(100vh - 205px);
+    margin: 0 auto;
+}
+.card {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background-color: #EDEBD7;
+    border: 1px solid #423E37;
+    box-shadow: 9px 11px 3px 0px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding: 40px;
+    transition: transform 0.3s, opacity 0.2s;
+}
+.card.hidden {
+    z-index: 100;
+    background-color: #fff;
+    color: #fff;
+    opacity: 0;
+    transition: color 0.5s, background-color 0.5s, transform 1s, opacity 0.2s 0.4s;
+}
+.card.hidden h1 {
+    color: #fff;
+    transition: color 0.5s;
+}
+.card.hidden:nth-of-type(1) {
+    transform: rotate(-56deg) translateX(101%) translateY(-29%) scale(0.8) skewX(10deg) skewY(9deg);
+}
+.card.hidden:nth-of-type(2) {
+    transform: rotate(-73deg) translateX(101%) translateY(-27%) scale(0.9) skewX(7deg) skewY(12deg);
+}
+.card.hidden:nth-of-type(3) {
+    transform: rotate(-66deg) translateX(101%) translateY(-38%) scale(0.9) skewX(2deg) skewY(5deg);
+}
+.card:nth-of-type(1) {
+    z-index: 5;
+    transform: translateX(0px) translateY(0px);
+}
+.card:nth-of-type(2) {
+    z-index: 4;
+    transform: translateX(10px) translateY(10px);
+}
+.card:nth-of-type(3) {
+    z-index: 3;
+    transform: translateX(20px) translateY(20px);
+}
+
+
+
+/* Content End */
+/* Footer Start */
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 300px;
+    background-color: rgb(0, 140, 255);
+}
+
+ul li a:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+
+
+

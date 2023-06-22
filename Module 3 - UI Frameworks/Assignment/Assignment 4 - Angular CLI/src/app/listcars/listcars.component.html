@@ -1,0 +1,18 @@
+<br>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let car of cars" class="card bg-light col-lg-4">
+            <div style="width:18rem;">
+                <div class="card-body ">
+                    <p class="card-text">
+                        <a routerLink="/carDetail/{{car.carid}}">
+                            <img src="{{car.photo}}" class="card-img-top">
+                        </a>
+                    </p>
+                    <h5 class="card-title">{{car.carid}}. {{car.make}} {{car.model}}</h5>
+                    <a href="/carDetail/{{car.carid}}" class="btn btn-primary">Detail</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

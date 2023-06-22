@@ -1,0 +1,13 @@
+<div class="container">
+        <div *ngIf="car" class=" row bg-light align-item-center">
+            <div class="col-lg-6">
+                <img src="{{car.photo}}" width="500">
+            </div>
+            <div class="col-lg-6 mt-5">
+                <h3>{{car.make}} {{car.model}}</h3>
+                <p>{{car.desc}} </p>
+                <p>Release Date of Car: Year {{car.year}}</p>
+                <button type="button" class="btn btn-danger" (click)="goBack()">Go Back</button>
+            </div>
+        </div>
+</div>

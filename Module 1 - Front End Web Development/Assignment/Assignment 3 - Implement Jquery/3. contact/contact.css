@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar Start */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgb(0, 200, 255);
+    box-shadow: 2px 2px 7px 1px #80787e;
+    padding: 10px 55px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+}
+
+.tittle-logo {
+    display: flex;
+    width: 32%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.img-navbar {  
+    max-width: 30%;  
+    height: auto;  
+}  
+
+
+ul {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    list-style: none;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+    transition: 0.75s;
+
+}
+ul li a:hover {
+    background-color: rgb(236, 236, 236);
+}
+/* Menu Bar Jquerry */
+
+.panel, #flip {
+    text-align: center;
+    background-color: rrgb(0, 200, 255);
+    width: 100%;
+    }
+
+    .panel {
+    background-color: #EDEBD7;
+    border-radius: 30px;
+    width: 180px;
+    position: absolute;
+    display: none;
+    top: 70px;
+    right: 30px;
+    }
+
+    .panel a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 7px 0px;
+    }
+    .panel a:hover{
+        background-color: #00000025;
+        border-radius: 30px;
+        transform: scale(0.9);
+    }
+/* Menu Bar End */
+/* Navbar End */
+/* Content Start */
+/* OP Content Start */
+.op-content3 {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+    margin: 0 auto;
+}
+
+.op-content3:hover {
+    box-shadow: 5px 5px 15px 5px #4a4242;
+}
+
+.div-opcontent3 {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 30px;
+    margin: 0 80px;
+    color: #4a4242;
+
+}
+
+.img-opcontent3 {
+    width: 400px;
+    height: auto;
+    border-radius: 20%;
+    padding: 20px 25px;
+}
+
+/* OP Content End */
+/* Card Contact Start */
+.mom-card {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.card {
+    width: 30%;
+    height: 150px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 5px 10px 30px 0 rgb(41 26 204 / 12%);
+    border-radius: 6px;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+  /* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.img-card {
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+}
+
+  /* Add some padding inside the card container */
+.container-card {
+    padding: 2px 16px;
+}
+/* Button JS Start */
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* Button JS End */
+/* Card Contact End */
+/* Social Media Start */
+.socialmedia {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.socialmedia ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    
+}
+
+.socialmedia ul li img {
+    width: 40px;
+    height: 40px;
+
+
+}
+/* Social Media End */
+/* Content End */
+/* Chat box Start */
+.form {
+    background: #fff;
+    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    border-radius: 5px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: 0;
+    right: 0;
+    border-top: 5px solid #0e3721;
+    animation: bounce 1.5s infinite;
+}
+::-webkit-input-placeholder {
+    font-size: 1.3em;
+}
+
+.title{
+    display: block;
+    font-family: sans-serif;
+    margin: 10px auto 5px;
+    width: 300px;
+}
+.termsConditions{
+    margin: 0 auto 5px 80px;
+}
+
+.pageTitle{
+    font-size: 2em;
+    font-weight: bold;
+}
+.secondaryTitle{
+    color: grey;
+}
+
+.name {
+    background-color: #ebebeb;
+    color: white;
+}
+.name:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+}
+
+.email {
+    background-color: #ebebeb;
+    height: 2em;
+}
+
+.email:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+}
+
+.message {
+    background-color: #ebebeb;
+    overflow: hidden;
+    height: 10rem;
+}
+
+.message:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 12em;
+    width: 380px;
+    transition: ease 0.5s;
+}
+
+.formEntry {
+    display: block;
+    margin: 30px auto;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s ease 0s;
+}
+
+.submit {
+    width: 200px;
+    color: white;
+    background-color: #0e3721;
+    font-size: 20px;
+}
+
+.submit:hover {
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+    transform: translateY(-3px);
+    width: 300px;
+    border-top: 5px solid #0e3750;
+    border-radius: 0%;
+}
+
+@keyframes bounce {
+    0% {
+    tranform: translate(0, 4px);
+    }
+    50% {
+    transform: translate(0, 8px);
+    }
+} 
+
+
+/* Chatbox End */
+/* Footer Start */
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 300px;
+    background-color: rgb(0, 140, 255);
+}
+
+ul li a:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+
+
+

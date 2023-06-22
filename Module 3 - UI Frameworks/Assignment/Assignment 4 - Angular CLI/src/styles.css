@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+/* If use CSS Here and in the component there is CSS
+it will not working */
+body{
+    background-color: #eaeaea;
+}
