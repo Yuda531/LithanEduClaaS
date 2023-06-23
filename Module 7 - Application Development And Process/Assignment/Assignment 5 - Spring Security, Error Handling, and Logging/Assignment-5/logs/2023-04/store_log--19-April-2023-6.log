@@ -1,0 +1,420 @@
+2023-04-19 14:06:03,007 INFO o.s.b.StartupInfoLogger [restartedMain] Starting KnowYourNeighborhoodApplication using Java 18.0.2.1 on WIN-J6AKPBS19DV with PID 11188 (C:\Users\Administrator\Documents\workspace-sts-3.9.12.RELEASE\KnowYourNeighborhoodApplication\target\classes started by Administrator in C:\Users\Administrator\Documents\workspace-sts-3.9.12.RELEASE\KnowYourNeighborhoodApplication)
+2023-04-19 14:06:03,012 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.6.9, Spring v5.3.21
+2023-04-19 14:06:03,015 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-19 14:06:03,058 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-19 14:06:03,058 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-19 14:06:03,590 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-19 14:06:03,644 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 47 ms. Found 3 JPA repository interfaces.
+2023-04-19 14:06:04,227 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9090 (http)
+2023-04-19 14:06:04,233 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9090"]
+2023-04-19 14:06:04,233 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-19 14:06:04,234 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-04-19 14:06:04,504 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-04-19 14:06:04,521 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-19 14:06:04,522 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1462 ms
+2023-04-19 14:06:04,847 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-19 14:06:04,907 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-04-19 14:06:05,048 INFO o.h.a.c.r.j.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-19 14:06:05,130 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-19 14:06:05,441 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-19 14:06:05,453 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-04-19 14:06:06,063 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user (id)
+2023-04-19 14:06:06,072 WARN o.h.t.s.i.ExceptionHandlerLoggedImpl [restartedMain] GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user (id)" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:526) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:452) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:263) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.6.9.jar:2.6.9]
+	at com.a5.KnowYourNeighborhoodApplication.main(KnowYourNeighborhoodApplication.java:10) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.9.jar:2.6.9]
+Caused by: java.sql.SQLException: Failed to open the referenced table 'user'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	... 36 more
+2023-04-19 14:06:06,078 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-19 14:06:06,085 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 14:06:06,435 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-19 14:06:06,616 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ffbf4da, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b2da851, org.springframework.security.web.header.HeaderWriterFilter@1c552e2a, org.springframework.security.web.csrf.CsrfFilter@3fce7857, org.springframework.security.web.authentication.logout.LogoutFilter@1ce799ba, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@40188265, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f4eb8fd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73cb9aae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@443e375f, org.springframework.security.web.session.SessionManagementFilter@eadd964, org.springframework.security.web.access.ExceptionTranslationFilter@1e4e3e9b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a8d1b6b]
+2023-04-19 14:06:06,758 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2023-04-19 14:06:06,863 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-19 14:06:06,882 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9090"]
+2023-04-19 14:06:06,900 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 9090 (http) with context path ''
+2023-04-19 14:06:06,908 INFO o.s.b.StartupInfoLogger [restartedMain] Started KnowYourNeighborhoodApplication in 4.134 seconds (JVM running for 4.95)
+2023-04-19 14:06:20,783 INFO o.a.j.l.DirectJDKLog [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 14:06:20,783 INFO o.s.w.s.FrameworkServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-19 14:06:20,784 INFO o.s.w.s.FrameworkServlet [http-nio-9090-exec-1] Completed initialization in 1 ms
+2023-04-19 14:06:24,583 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-5] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:06:24,605 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-5] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-19 14:06:27,205 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-10] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:06:48,256 INFO c.a.c.StoreController [http-nio-9090-exec-5] before calling Service to save store info
+2023-04-19 14:06:48,257 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-5] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:06:48,272 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-5] insert into store (email, localities, name, phone_number) values (?, ?, ?, ?)
+2023-04-19 14:06:48,282 INFO c.a.c.StoreController [http-nio-9090-exec-5] After calling Service to save store info
+2023-04-19 14:06:50,062 INFO c.a.c.StoreController [http-nio-9090-exec-8] before calling Service to fetch all store details
+2023-04-19 14:06:50,065 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-8] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:06:50,068 INFO c.a.c.StoreController [http-nio-9090-exec-8] after calling Service to fetch all store details
+2023-04-19 14:06:53,107 INFO c.a.c.StoreController [http-nio-9090-exec-2] before calling Service to fetch selected store detail for updating
+2023-04-19 14:06:53,109 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-2] select store0_.id as id1_1_0_, store0_.email as email2_1_0_, store0_.localities as localiti3_1_0_, store0_.name as name4_1_0_, store0_.phone_number as phone_nu5_1_0_ from store store0_ where store0_.id=?
+2023-04-19 14:06:53,112 INFO c.a.c.StoreController [http-nio-9090-exec-2] after calling Service to update selected store detail under addStore method
+2023-04-19 14:07:00,980 INFO c.a.c.StoreController [http-nio-9090-exec-7] before calling Service to save store info
+2023-04-19 14:07:00,982 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-7] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:07:00,989 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-7] select store0_.id as id1_1_0_, store0_.email as email2_1_0_, store0_.localities as localiti3_1_0_, store0_.name as name4_1_0_, store0_.phone_number as phone_nu5_1_0_ from store store0_ where store0_.id=?
+2023-04-19 14:07:00,995 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-7] update store set email=?, localities=?, name=?, phone_number=? where id=?
+2023-04-19 14:07:01,002 INFO c.a.c.StoreController [http-nio-9090-exec-7] After calling Service to save store info
+2023-04-19 14:07:02,590 INFO c.a.c.StoreController [http-nio-9090-exec-1] before calling Service to fetch all store details
+2023-04-19 14:07:02,591 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-1] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:07:02,595 INFO c.a.c.StoreController [http-nio-9090-exec-1] after calling Service to fetch all store details
+2023-04-19 14:07:07,202 INFO c.a.c.StoreController [http-nio-9090-exec-4] before calling Service to delete store
+2023-04-19 14:07:07,204 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-4] select store0_.id as id1_1_0_, store0_.email as email2_1_0_, store0_.localities as localiti3_1_0_, store0_.name as name4_1_0_, store0_.phone_number as phone_nu5_1_0_ from store store0_ where store0_.id=?
+2023-04-19 14:07:07,207 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-4] delete from store where id=?
+2023-04-19 14:07:07,218 INFO c.a.c.StoreController [http-nio-9090-exec-4] after calling Service to delete store
+2023-04-19 14:07:07,226 INFO c.a.c.StoreController [http-nio-9090-exec-6] before calling Service to fetch all store details
+2023-04-19 14:07:07,227 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:07:07,229 INFO c.a.c.StoreController [http-nio-9090-exec-6] after calling Service to fetch all store details
+2023-04-19 14:07:17,227 INFO c.a.c.StoreController [http-nio-9090-exec-10] before calling Service to fetch store details by email
+2023-04-19 14:07:17,231 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-10] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_ where store0_.email=?
+2023-04-19 14:07:17,234 INFO c.a.c.StoreController [http-nio-9090-exec-10] after calling Service to fetch store details by email
+2023-04-19 14:07:21,610 INFO c.a.c.StoreController [http-nio-9090-exec-5] before calling Service to fetch all store details
+2023-04-19 14:07:21,612 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-5] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:07:21,614 INFO c.a.c.StoreController [http-nio-9090-exec-5] after calling Service to fetch all store details
+2023-04-19 14:07:53,981 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-7] select role0_.id as id1_0_, role0_.description as descript2_0_, role0_.name as name3_0_ from role role0_ where role0_.name in (?)
+2023-04-19 14:07:53,983 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-7] insert into user (address, email, mobile, name, password, user_name) values (?, ?, ?, ?, ?, ?)
+2023-04-19 14:07:53,990 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-7] insert into user_role (user_id, role_id) values (?, ?)
+2023-04-19 14:08:00,163 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-5] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:08:00,165 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-5] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-19 14:08:02,379 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-8] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:08:05,239 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-10] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:08:07,195 INFO c.a.c.StoreController [http-nio-9090-exec-2] before calling Service to fetch all store details
+2023-04-19 14:08:07,197 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-2] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:08:07,199 INFO c.a.c.StoreController [http-nio-9090-exec-2] after calling Service to fetch all store details
+2023-04-19 14:08:11,248 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:08:13,189 INFO c.a.c.StoreController [http-nio-9090-exec-7] before calling Service to fetch all store details
+2023-04-19 14:08:13,192 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-7] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:08:13,194 INFO c.a.c.StoreController [http-nio-9090-exec-7] after calling Service to fetch all store details
+2023-04-19 14:08:18,417 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-3] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:08:20,228 INFO c.a.c.StoreController [http-nio-9090-exec-1] before calling Service to fetch all store details
+2023-04-19 14:08:20,230 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-1] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:08:20,233 INFO c.a.c.StoreController [http-nio-9090-exec-1] after calling Service to fetch all store details
+2023-04-19 14:09:03,718 INFO c.a.c.StoreController [http-nio-9090-exec-7] before calling Service to fetch store details by email
+2023-04-19 14:09:03,719 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-7] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_ where store0_.email=?
+2023-04-19 14:09:03,722 INFO c.a.c.StoreController [http-nio-9090-exec-7] after calling Service to fetch store details by email
+2023-04-19 14:09:05,466 INFO c.a.c.StoreController [http-nio-9090-exec-2] before calling Service to fetch all store details
+2023-04-19 14:09:05,467 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-2] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:09:05,470 INFO c.a.c.StoreController [http-nio-9090-exec-2] after calling Service to fetch all store details
+2023-04-19 14:12:55,629 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] select role0_.id as id1_0_, role0_.description as descript2_0_, role0_.name as name3_0_ from role role0_ where role0_.name in (?)
+2023-04-19 14:12:55,631 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] insert into user (address, email, mobile, name, password, user_name) values (?, ?, ?, ?, ?, ?)
+2023-04-19 14:12:55,638 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] insert into user_role (user_id, role_id) values (?, ?)
+2023-04-19 14:13:06,534 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-5] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:13:06,536 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-5] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-19 14:13:08,669 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-9] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:13:12,011 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-1] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:13:13,914 INFO c.a.c.StoreController [http-nio-9090-exec-3] before calling Service to fetch all store details
+2023-04-19 14:13:13,916 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-3] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:13:13,918 INFO c.a.c.StoreController [http-nio-9090-exec-3] after calling Service to fetch all store details
+2023-04-19 14:13:17,300 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-8] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:13:21,601 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-9] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:13:23,315 INFO c.a.c.StoreController [http-nio-9090-exec-2] before calling Service to fetch all store details
+2023-04-19 14:13:23,319 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-2] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:13:23,322 INFO c.a.c.StoreController [http-nio-9090-exec-2] after calling Service to fetch all store details
+2023-04-19 14:33:17,045 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-1] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:33:17,047 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-1] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-19 14:33:19,590 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-7] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:39:52,742 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-1] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:39:52,744 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-1] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-19 14:39:55,029 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:40:02,158 INFO c.a.c.StoreController [http-nio-9090-exec-2] before calling Service to fetch all store details
+2023-04-19 14:40:02,159 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-2] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:40:02,162 INFO c.a.c.StoreController [http-nio-9090-exec-2] after calling Service to fetch all store details
+2023-04-19 14:41:29,117 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:41:29,118 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-19 14:41:31,280 INFO c.a.c.StoreController [http-nio-9090-exec-9] before calling Service to fetch all store details
+2023-04-19 14:41:31,281 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-9] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:41:31,283 INFO c.a.c.StoreController [http-nio-9090-exec-9] after calling Service to fetch all store details
+2023-04-19 14:41:32,980 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-8] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:41:39,623 INFO c.a.c.StoreController [http-nio-9090-exec-5] before calling Service to fetch all store details
+2023-04-19 14:41:39,625 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-5] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:41:39,627 INFO c.a.c.StoreController [http-nio-9090-exec-5] after calling Service to fetch all store details
+2023-04-19 14:41:50,876 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-4] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:41:50,878 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-4] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-19 14:42:38,568 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-10] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:42:38,570 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-10] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-19 14:42:42,381 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-4] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:42:46,066 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-9] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:42:48,067 INFO c.a.c.StoreController [http-nio-9090-exec-6] before calling Service to fetch all store details
+2023-04-19 14:42:48,069 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:42:48,071 INFO c.a.c.StoreController [http-nio-9090-exec-6] after calling Service to fetch all store details
+2023-04-19 14:42:51,467 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-5] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:50:28,017 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-5] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:50:28,018 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-5] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-19 14:50:49,935 INFO c.a.c.StoreController [http-nio-9090-exec-10] before calling Service to save store info
+2023-04-19 14:50:49,936 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-10] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:50:49,940 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-10] insert into store (email, localities, name, phone_number) values (?, ?, ?, ?)
+2023-04-19 14:50:49,946 INFO c.a.c.StoreController [http-nio-9090-exec-10] After calling Service to save store info
+2023-04-19 14:51:12,698 INFO c.a.c.StoreController [http-nio-9090-exec-7] before calling Service to fetch all store details
+2023-04-19 14:51:12,699 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-7] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:51:12,702 INFO c.a.c.StoreController [http-nio-9090-exec-7] after calling Service to fetch all store details
+2023-04-19 14:51:15,783 INFO c.a.c.StoreController [http-nio-9090-exec-5] before calling Service to fetch all store details
+2023-04-19 14:51:15,785 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-5] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:51:15,789 INFO c.a.c.StoreController [http-nio-9090-exec-5] after calling Service to fetch all store details
+2023-04-19 14:51:39,977 INFO c.a.c.StoreController [http-nio-9090-exec-1] before calling Service to save store info
+2023-04-19 14:51:39,978 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-1] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:51:39,980 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-1] insert into store (email, localities, name, phone_number) values (?, ?, ?, ?)
+2023-04-19 14:51:39,986 INFO c.a.c.StoreController [http-nio-9090-exec-1] After calling Service to save store info
+2023-04-19 14:51:42,479 INFO c.a.c.StoreController [http-nio-9090-exec-2] before calling Service to fetch all store details
+2023-04-19 14:51:42,481 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-2] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:51:42,483 INFO c.a.c.StoreController [http-nio-9090-exec-2] after calling Service to fetch all store details
+2023-04-19 14:51:46,194 INFO c.a.c.StoreController [http-nio-9090-exec-6] before calling Service to delete store
+2023-04-19 14:51:46,195 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] select store0_.id as id1_1_0_, store0_.email as email2_1_0_, store0_.localities as localiti3_1_0_, store0_.name as name4_1_0_, store0_.phone_number as phone_nu5_1_0_ from store store0_ where store0_.id=?
+2023-04-19 14:51:46,198 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] delete from store where id=?
+2023-04-19 14:51:46,213 INFO c.a.c.StoreController [http-nio-9090-exec-6] after calling Service to delete store
+2023-04-19 14:51:46,219 INFO c.a.c.StoreController [http-nio-9090-exec-10] before calling Service to fetch all store details
+2023-04-19 14:51:46,220 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-10] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:51:46,222 INFO c.a.c.StoreController [http-nio-9090-exec-10] after calling Service to fetch all store details
+2023-04-19 14:51:52,050 INFO c.a.c.StoreController [http-nio-9090-exec-7] before calling Service to fetch selected store detail for updating
+2023-04-19 14:51:52,051 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-7] select store0_.id as id1_1_0_, store0_.email as email2_1_0_, store0_.localities as localiti3_1_0_, store0_.name as name4_1_0_, store0_.phone_number as phone_nu5_1_0_ from store store0_ where store0_.id=?
+2023-04-19 14:51:52,053 INFO c.a.c.StoreController [http-nio-9090-exec-7] after calling Service to update selected store detail under addStore method
+2023-04-19 14:51:58,010 INFO c.a.c.StoreController [http-nio-9090-exec-3] before calling Service to save store info
+2023-04-19 14:51:58,011 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-3] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:51:58,013 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-3] select store0_.id as id1_1_0_, store0_.email as email2_1_0_, store0_.localities as localiti3_1_0_, store0_.name as name4_1_0_, store0_.phone_number as phone_nu5_1_0_ from store store0_ where store0_.id=?
+2023-04-19 14:51:58,014 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-3] update store set email=?, localities=?, name=?, phone_number=? where id=?
+2023-04-19 14:51:58,020 INFO c.a.c.StoreController [http-nio-9090-exec-3] After calling Service to save store info
+2023-04-19 14:51:59,247 INFO c.a.c.StoreController [http-nio-9090-exec-5] before calling Service to fetch all store details
+2023-04-19 14:51:59,248 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-5] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:51:59,251 INFO c.a.c.StoreController [http-nio-9090-exec-5] after calling Service to fetch all store details
+2023-04-19 14:52:07,324 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-4] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:52:50,983 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-2] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:53:17,781 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-3] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:53:24,867 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:53:30,883 INFO c.a.c.StoreController [http-nio-9090-exec-7] before calling Service to fetch all store details
+2023-04-19 14:53:30,885 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-7] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 14:53:30,887 INFO c.a.c.StoreController [http-nio-9090-exec-7] after calling Service to fetch all store details
+2023-04-19 14:53:32,042 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-3] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:56:26,278 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-7] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:56:26,280 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-7] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-19 14:57:53,973 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-7] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 14:58:15,354 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-1] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 15:00:48,714 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 15:00:48,716 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-19 15:00:51,552 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-4] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 15:07:05,761 INFO c.a.c.StoreController [http-nio-9090-exec-1] before calling Service to fetch all store details
+2023-04-19 15:07:05,764 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-1] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 15:07:05,775 INFO c.a.c.StoreController [http-nio-9090-exec-1] after calling Service to fetch all store details
+2023-04-19 15:12:16,649 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 15:12:16,655 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-19 15:12:58,786 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-4] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 15:12:58,788 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-4] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-19 15:13:02,176 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-3] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 15:13:22,923 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 15:13:35,610 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-5] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 15:15:22,425 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-7] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 15:17:53,484 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-2] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 15:17:53,486 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-2] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-19 16:21:55,095 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 16:21:55,102 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2023-04-19 16:21:55,106 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2023-04-19 16:21:55,283 INFO o.s.b.StartupInfoLogger [restartedMain] Starting KnowYourNeighborhoodApplication using Java 18.0.2.1 on WIN-J6AKPBS19DV with PID 11188 (C:\Users\Administrator\Documents\workspace-sts-3.9.12.RELEASE\KnowYourNeighborhoodApplication\target\classes started by Administrator in C:\Users\Administrator\Documents\workspace-sts-3.9.12.RELEASE\KnowYourNeighborhoodApplication)
+2023-04-19 16:21:55,284 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.6.9, Spring v5.3.21
+2023-04-19 16:21:55,284 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-19 16:21:55,590 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-19 16:21:55,618 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 27 ms. Found 3 JPA repository interfaces.
+2023-04-19 16:21:55,764 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9090 (http)
+2023-04-19 16:21:55,765 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9090"]
+2023-04-19 16:21:55,765 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-19 16:21:55,766 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-04-19 16:21:55,890 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-04-19 16:21:55,892 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-19 16:21:55,892 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 603 ms
+2023-04-19 16:21:55,940 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-19 16:21:55,948 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2023-04-19 16:21:55,961 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2023-04-19 16:21:55,962 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-04-19 16:21:56,060 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user (id)
+2023-04-19 16:21:56,064 WARN o.h.t.s.i.ExceptionHandlerLoggedImpl [restartedMain] GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user (id)" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:526) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:452) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:263) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.6.9.jar:2.6.9]
+	at com.a5.KnowYourNeighborhoodApplication.main(KnowYourNeighborhoodApplication.java:10) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.9.jar:2.6.9]
+Caused by: java.sql.SQLException: Failed to open the referenced table 'user'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	... 36 more
+2023-04-19 16:21:56,066 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-19 16:21:56,067 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 16:21:56,194 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-19 16:21:56,252 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2329d7a1, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a6a3162, org.springframework.security.web.header.HeaderWriterFilter@7e873803, org.springframework.security.web.csrf.CsrfFilter@62771287, org.springframework.security.web.authentication.logout.LogoutFilter@15f23210, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@47ac9743, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46d28bd6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d2e42f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46214660, org.springframework.security.web.session.SessionManagementFilter@40d3f0d5, org.springframework.security.web.access.ExceptionTranslationFilter@17097da4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@135bd897]
+2023-04-19 16:21:56,303 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2023-04-19 16:21:56,342 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-19 16:21:56,348 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9090"]
+2023-04-19 16:21:56,352 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 9090 (http) with context path ''
+2023-04-19 16:21:56,356 INFO o.s.b.StartupInfoLogger [restartedMain] Started KnowYourNeighborhoodApplication in 1.132 seconds (JVM running for 8154.397)
+2023-04-19 16:21:56,359 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-04-19 16:23:00,871 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 16:23:00,871 INFO c.z.h.HikariDataSource [Thread-7] HikariPool-2 - Shutdown initiated...
+2023-04-19 16:23:00,874 INFO c.z.h.HikariDataSource [Thread-7] HikariPool-2 - Shutdown completed.
+2023-04-19 16:23:00,981 INFO o.s.b.StartupInfoLogger [restartedMain] Starting KnowYourNeighborhoodApplication using Java 18.0.2.1 on WIN-J6AKPBS19DV with PID 11188 (C:\Users\Administrator\Documents\workspace-sts-3.9.12.RELEASE\KnowYourNeighborhoodApplication\target\classes started by Administrator in C:\Users\Administrator\Documents\workspace-sts-3.9.12.RELEASE\KnowYourNeighborhoodApplication)
+2023-04-19 16:23:00,981 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.6.9, Spring v5.3.21
+2023-04-19 16:23:00,981 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-19 16:23:01,192 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-19 16:23:01,213 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2023-04-19 16:23:01,305 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9090 (http)
+2023-04-19 16:23:01,306 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9090"]
+2023-04-19 16:23:01,306 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-19 16:23:01,306 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-04-19 16:23:01,404 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-04-19 16:23:01,406 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-19 16:23:01,406 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 423 ms
+2023-04-19 16:23:01,452 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-19 16:23:01,458 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2023-04-19 16:23:01,472 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2023-04-19 16:23:01,473 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-04-19 16:23:01,547 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user (id)
+2023-04-19 16:23:01,549 WARN o.h.t.s.i.ExceptionHandlerLoggedImpl [restartedMain] GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user (id)" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:526) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:452) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:263) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.6.9.jar:2.6.9]
+	at com.a5.KnowYourNeighborhoodApplication.main(KnowYourNeighborhoodApplication.java:10) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.9.jar:2.6.9]
+Caused by: java.sql.SQLException: Failed to open the referenced table 'user'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	... 36 more
+2023-04-19 16:23:01,550 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-19 16:23:01,551 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 16:23:01,672 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-19 16:23:01,748 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c44f348, org.springframework.security.web.context.SecurityContextPersistenceFilter@740d30c2, org.springframework.security.web.header.HeaderWriterFilter@10a1dc5, org.springframework.security.web.csrf.CsrfFilter@564994aa, org.springframework.security.web.authentication.logout.LogoutFilter@65ee69b5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@205b4ea3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f2b5b70, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e1e8965, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f4ef55, org.springframework.security.web.session.SessionManagementFilter@6efb0573, org.springframework.security.web.access.ExceptionTranslationFilter@24c9e08b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4271f1a3]
+2023-04-19 16:23:01,795 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2023-04-19 16:23:01,834 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-19 16:23:01,844 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9090"]
+2023-04-19 16:23:01,848 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 9090 (http) with context path ''
+2023-04-19 16:23:01,852 INFO o.s.b.StartupInfoLogger [restartedMain] Started KnowYourNeighborhoodApplication in 0.911 seconds (JVM running for 8219.893)
+2023-04-19 16:23:01,853 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-04-19 16:23:26,522 INFO o.a.j.l.DirectJDKLog [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 16:23:26,522 INFO o.s.w.s.FrameworkServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-19 16:23:26,523 INFO o.s.w.s.FrameworkServlet [http-nio-9090-exec-1] Completed initialization in 0 ms
+2023-04-19 16:23:26,529 WARN o.s.w.s.m.m.a.ResponseEntityExceptionHandler [http-nio-9090-exec-1] Request method 'POST' not supported
+2023-04-19 16:23:26,534 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-9090-exec-1] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-04-19 16:23:32,613 WARN o.s.w.s.m.m.a.ResponseEntityExceptionHandler [http-nio-9090-exec-2] Request method 'POST' not supported
+2023-04-19 16:23:32,613 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-9090-exec-2] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-04-19 16:23:38,089 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-9] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 16:23:38,092 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-9] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-19 16:23:40,127 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-4] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 16:24:05,488 INFO c.a.c.StoreController [http-nio-9090-exec-5] before calling Service to fetch all store details
+2023-04-19 16:24:05,493 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-5] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 16:24:05,495 INFO c.a.c.StoreController [http-nio-9090-exec-5] after calling Service to fetch all store details
+2023-04-19 16:27:56,819 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2023-04-19 16:27:56,844 INFO o.s.o.j.AbstractEntityManagerFactoryBean [RMI TCP Connection(2)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 16:27:56,844 INFO c.z.h.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-3 - Shutdown initiated...
+2023-04-19 16:27:56,849 INFO c.z.h.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-3 - Shutdown completed.

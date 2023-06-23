@@ -1,0 +1,42 @@
+2023-04-18 15:50:56,601 INFO o.s.b.StartupInfoLogger [restartedMain] Starting KnowYourNeighborhoodApplication using Java 18.0.2.1 on WIN-J6AKPBS19DV with PID 12316 (C:\Users\Administrator\Documents\workspace-sts-3.9.12.RELEASE\KnowYourNeighborhoodApplication\target\classes started by Administrator in C:\Users\Administrator\Documents\workspace-sts-3.9.12.RELEASE\KnowYourNeighborhoodApplication)
+2023-04-18 15:50:56,607 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.6.9, Spring v5.3.21
+2023-04-18 15:50:56,608 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 15:50:56,659 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-18 15:50:56,660 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-18 15:50:57,261 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-18 15:50:57,307 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2023-04-18 15:50:57,849 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9090 (http)
+2023-04-18 15:50:57,855 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9090"]
+2023-04-18 15:50:57,855 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-18 15:50:57,856 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-04-18 15:50:58,140 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-04-18 15:50:58,151 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-18 15:50:58,152 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1491 ms
+2023-04-18 15:50:58,320 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-18 15:50:58,366 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-04-18 15:50:58,487 INFO o.h.a.c.r.j.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-18 15:50:58,578 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-18 15:50:58,866 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-18 15:50:58,881 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-04-18 15:50:59,480 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-18 15:50:59,486 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-18 15:50:59,851 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-18 15:51:00,050 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18c51f2f, org.springframework.security.web.context.SecurityContextPersistenceFilter@c7adc6d, org.springframework.security.web.header.HeaderWriterFilter@475fe579, org.springframework.security.web.csrf.CsrfFilter@7e78e4b0, org.springframework.security.web.authentication.logout.LogoutFilter@48a106d5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4f1810b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@282395bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13a482e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73cb9aae, org.springframework.security.web.session.SessionManagementFilter@1bc7e8ca, org.springframework.security.web.access.ExceptionTranslationFilter@8976a05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b2da851]
+2023-04-18 15:51:00,240 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2023-04-18 15:51:00,410 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-18 15:51:00,435 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9090"]
+2023-04-18 15:51:00,461 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 9090 (http) with context path ''
+2023-04-18 15:51:00,471 INFO o.s.b.StartupInfoLogger [restartedMain] Started KnowYourNeighborhoodApplication in 4.128 seconds (JVM running for 4.997)
+2023-04-18 15:51:08,122 INFO o.a.j.l.DirectJDKLog [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-18 15:51:08,123 INFO o.s.w.s.FrameworkServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-18 15:51:08,125 INFO o.s.w.s.FrameworkServlet [http-nio-9090-exec-1] Completed initialization in 2 ms
+2023-04-18 15:51:37,947 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-10] select role0_.id as id1_0_, role0_.description as descript2_0_, role0_.name as name3_0_ from role role0_ where role0_.name in (?)
+2023-04-18 15:51:37,973 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-10] insert into user (address, email, mobile, name, password, user_name) values (?, ?, ?, ?, ?, ?)
+2023-04-18 15:52:20,879 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-9] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-18 15:52:20,884 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-9] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-18 15:55:57,522 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-3] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-18 15:55:57,524 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-3] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-18 15:57:14,814 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2023-04-18 15:57:14,850 INFO o.s.o.j.AbstractEntityManagerFactoryBean [RMI TCP Connection(2)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-18 15:57:14,852 INFO c.z.h.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-04-18 15:57:14,858 INFO c.z.h.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown completed.

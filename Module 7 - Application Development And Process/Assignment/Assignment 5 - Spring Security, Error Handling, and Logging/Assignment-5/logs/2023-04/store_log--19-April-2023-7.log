@@ -1,0 +1,106 @@
+2023-04-19 20:47:50,883 INFO o.s.b.StartupInfoLogger [restartedMain] Starting KnowYourNeighborhoodApplication using Java 18.0.2.1 on WIN-J6AKPBS19DV with PID 7564 (C:\Users\Administrator\Documents\workspace-sts-3.9.12.RELEASE\KnowYourNeighborhoodApplication\target\classes started by Administrator in C:\Users\Administrator\Documents\workspace-sts-3.9.12.RELEASE\KnowYourNeighborhoodApplication)
+2023-04-19 20:47:50,891 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.6.9, Spring v5.3.21
+2023-04-19 20:47:50,892 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-19 20:47:50,947 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-19 20:47:50,948 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-19 20:47:51,609 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-19 20:47:51,674 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
+2023-04-19 20:47:52,438 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9090 (http)
+2023-04-19 20:47:52,445 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9090"]
+2023-04-19 20:47:52,446 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-19 20:47:52,448 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-04-19 20:47:52,752 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-04-19 20:47:52,758 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-19 20:47:52,758 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1810 ms
+2023-04-19 20:47:52,901 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-19 20:47:52,949 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-04-19 20:47:53,105 INFO o.h.a.c.r.j.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-19 20:47:53,204 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-19 20:47:53,551 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-19 20:47:53,565 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-04-19 20:47:54,097 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user (id)
+2023-04-19 20:47:54,106 WARN o.h.t.s.i.ExceptionHandlerLoggedImpl [restartedMain] GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user (id)" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_role add constraint FK859n2jvi8ivhui0rl0esws6o foreign key (user_id) references user (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:526) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:452) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:263) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) ~[spring-boot-2.6.9.jar:2.6.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.6.9.jar:2.6.9]
+	at com.a5.KnowYourNeighborhoodApplication.main(KnowYourNeighborhoodApplication.java:10) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.9.jar:2.6.9]
+Caused by: java.sql.SQLException: Failed to open the referenced table 'user'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	... 36 more
+2023-04-19 20:47:54,112 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-19 20:47:54,118 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 20:47:54,499 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-19 20:47:54,666 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6001a249, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b0e0716, org.springframework.security.web.header.HeaderWriterFilter@7473a05, org.springframework.security.web.csrf.CsrfFilter@723b9073, org.springframework.security.web.authentication.logout.LogoutFilter@3068d861, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@255e3394, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45a7c8f7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62c3b811, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b8bbd15, org.springframework.security.web.session.SessionManagementFilter@7368fdcd, org.springframework.security.web.access.ExceptionTranslationFilter@570ffb64, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d376c79]
+2023-04-19 20:47:54,811 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2023-04-19 20:47:54,935 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-19 20:47:54,954 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9090"]
+2023-04-19 20:47:54,975 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 9090 (http) with context path ''
+2023-04-19 20:47:54,986 INFO o.s.b.StartupInfoLogger [restartedMain] Started KnowYourNeighborhoodApplication in 4.414 seconds (JVM running for 5.525)
+2023-04-19 20:48:31,786 INFO o.a.j.l.DirectJDKLog [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 20:48:31,787 INFO o.s.w.s.FrameworkServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-19 20:48:31,788 INFO o.s.w.s.FrameworkServlet [http-nio-9090-exec-1] Completed initialization in 1 ms
+2023-04-19 20:49:00,944 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-1] select role0_.id as id1_0_, role0_.description as descript2_0_, role0_.name as name3_0_ from role role0_ where role0_.name in (?)
+2023-04-19 20:49:00,973 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-1] insert into user (address, email, mobile, name, password, user_name) values (?, ?, ?, ?, ?, ?)
+2023-04-19 20:49:00,993 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-1] insert into user_role (user_id, role_id) values (?, ?)
+2023-04-19 21:01:07,781 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-1] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 21:01:07,785 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-1] select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_0_1_, role1_.description as descript2_0_1_, role1_.name as name3_0_1_ from user_role roles0_ inner join role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-04-19 21:01:10,544 INFO c.a.c.StoreController [http-nio-9090-exec-6] before calling Service to fetch all store details
+2023-04-19 21:01:10,550 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-6] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 21:01:10,553 INFO c.a.c.StoreController [http-nio-9090-exec-6] after calling Service to fetch all store details
+2023-04-19 21:01:36,873 INFO c.a.c.StoreController [http-nio-9090-exec-2] before calling Service to save store info
+2023-04-19 21:01:36,876 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-2] select user0_.id as id1_2_, user0_.address as address2_2_, user0_.email as email3_2_, user0_.mobile as mobile4_2_, user0_.name as name5_2_, user0_.password as password6_2_, user0_.user_name as user_nam7_2_ from user user0_ where user0_.user_name=?
+2023-04-19 21:01:36,879 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-2] insert into store (email, localities, name, phone_number) values (?, ?, ?, ?)
+2023-04-19 21:01:36,885 INFO c.a.c.StoreController [http-nio-9090-exec-2] After calling Service to save store info
+2023-04-19 21:01:40,323 INFO c.a.c.StoreController [http-nio-9090-exec-7] before calling Service to fetch all store details
+2023-04-19 21:01:40,326 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-7] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 21:01:40,330 INFO c.a.c.StoreController [http-nio-9090-exec-7] after calling Service to fetch all store details
+2023-04-19 21:16:44,362 INFO c.a.c.StoreController [http-nio-9090-exec-2] before calling Service to fetch store details by email
+2023-04-19 21:16:44,370 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-2] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_ where store0_.email=?
+2023-04-19 21:16:44,381 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-9090-exec-2] Resolved [com.a5.exception.StoreNotFoundException: No store exists for edward@gmail.com entered]
+2023-04-19 21:19:54,067 INFO c.a.c.StoreController [http-nio-9090-exec-8] before calling Service to fetch all store details
+2023-04-19 21:19:54,069 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-9090-exec-8] select store0_.id as id1_1_, store0_.email as email2_1_, store0_.localities as localiti3_1_, store0_.name as name4_1_, store0_.phone_number as phone_nu5_1_ from store store0_
+2023-04-19 21:19:54,074 INFO c.a.c.StoreController [http-nio-9090-exec-8] after calling Service to fetch all store details
+2023-04-19 21:24:18,579 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2023-04-19 21:24:18,642 INFO o.s.o.j.AbstractEntityManagerFactoryBean [RMI TCP Connection(2)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19 21:24:18,650 INFO c.z.h.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-04-19 21:24:18,657 INFO c.z.h.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown completed.

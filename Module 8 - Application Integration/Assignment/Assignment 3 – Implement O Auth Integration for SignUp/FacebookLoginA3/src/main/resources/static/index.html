@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Sign In | Facebook</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+  <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      padding-top: 50px;
+    }
+  
+    h1 {
+      text-align: center;
+      color: #3b5998;
+      font-family: Arial, sans-serif;
+    }
+  
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+    .container.authenticated {
+      display: none;
+    }
+  
+    #user {
+      font-weight: bold;
+    }
+    
+    .login-button {
+      background-color: #3b5998;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .login-button:hover {
+      background-color: #457cf5;
+      color: #fff;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>Sign In to Facebook</h1>
+
+  <div class="container unauthenticated">
+    <p>Login With Facebook:</p>
+    <a href="/login" class="login-button">Sign In</a>
+  </div>
+  
+  <div class="container authenticated">
+    <p>Logged in as: <span id="user"></span></p>
+  </div>
+  
+  <script type="text/javascript">
+    $.get("/user", function(data) {
+      $("#user").html(data.userAuthentication.details.name);
+      $(".unauthenticated").hide();
+      $(".authenticated").show();
+    });
+    </script>
+</body>
+</html>
